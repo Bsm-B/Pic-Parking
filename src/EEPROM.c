@@ -3,21 +3,19 @@
 void Write_Places(unsigned short d){
    EEPROM_Write(PLACES,d);
 }
+unsigned short Read_Places_num(){
+
+ return EEPROM_Read(PLACES);
+
+}
 
 void Read_Places(char *P){
-  unsigned short tmp;
-  tmp = EEPROM_Read(PLACES);
-  ByteToStr(tmp,P);
+
+  ByteToStr(EEPROM_Read(PLACES),P);
 }
 void Add_Places(){
-  unsigned short tmp;
-  tmp = EEPROM_Read(PLACES);
-  tmp ++;
-  EEPROM_Write(PLACES,tmp);
+  EEPROM_Write(PLACES, EEPROM_Read(PLACES)+1);
 }
 void Sub_Places(){
-  unsigned short tmp;
-  tmp = EEPROM_Read(PLACES);
-  tmp --;
-  EEPROM_Write(PLACES,tmp);
+  EEPROM_Write(PLACES,EEPROM_Read(PLACES)-1);
 }

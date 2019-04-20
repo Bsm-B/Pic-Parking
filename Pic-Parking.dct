@@ -416,6 +416,7 @@ fabs
 ferr
 ferr_bit
 fixsign32
+flag
 flash_read
 flash_write
 floattostr
@@ -509,7 +510,7 @@ inte
 inte_bit
 intedg
 intedg_bit
-interruption
+interrupt
 intf
 intf_bit
 inttohex
@@ -814,6 +815,7 @@ re2
 re2_bit
 read_lm35
 read_places
+read_places_num
 read_write
 read_write_bit
 res032

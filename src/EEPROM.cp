@@ -6,27 +6,26 @@
 
 void Write_Places(unsigned short);
 void Read_Places(char *);
+unsigned short Read_Places_num();
 void Add_Places();
 void Sub_Places();
 #line 3 "C:/Users/Bsm/Desktop/Pic-Parking/src/EEPROM.c"
 void Write_Places(unsigned short d){
  EEPROM_Write( 0x10 ,d);
 }
+unsigned short Read_Places_num(){
+
+ return EEPROM_Read( 0x10 );
+
+}
 
 void Read_Places(char *P){
- unsigned short tmp;
- tmp = EEPROM_Read( 0x10 );
- ByteToStr(tmp,P);
+
+ ByteToStr(EEPROM_Read( 0x10 ),P);
 }
 void Add_Places(){
- unsigned short tmp;
- tmp = EEPROM_Read( 0x10 );
- tmp ++;
- EEPROM_Write( 0x10 ,tmp);
+ EEPROM_Write( 0x10 , EEPROM_Read( 0x10 )+1);
 }
 void Sub_Places(){
- unsigned short tmp;
- tmp = EEPROM_Read( 0x10 );
- tmp --;
- EEPROM_Write( 0x10 ,tmp);
+ EEPROM_Write( 0x10 ,EEPROM_Read( 0x10 )-1);
 }

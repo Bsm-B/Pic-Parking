@@ -17,40 +17,41 @@ void Init_Control(){
 
 void Motor1(){
  portc.RC2 = 1;
- Delay_ms(5000);
+ Delay_ms(3000);
  portc.RC2 = 0;
- Delay_ms(8000);
+ Delay_ms(4000);
  portc.RC3 = 1;
- Delay_ms(5000);
+ Delay_ms(3000);
  portc.RC3 = 0;
 }
 
 void Motor2(){
- portc.RC2 = 1;
- Delay_ms(5000);
- portc.RC2 = 0;
- Delay_ms(8000);
- portc.RC3 = 1;
- Delay_ms(5000);
- portc.RC3 = 0;
+ portc.RC4 = 1;
+ Delay_ms(3000);
+ portc.RC4 = 0;
+ Delay_ms(4000);
+ portc.RC5 = 1;
+ Delay_ms(3000);
+ portc.RC5 = 0;
 }
 
 
 void Free_Places()
 {
- int i;
+ short i;
  for(i=0;i<6;i++){
  PORTC.RC0 =~ PORTC.RC0;
- Delay_ms(500);
+ Delay_ms(300);
  }
 }
 
 
 void Full_Places()
 {
- int i;
+
+ short i;
  for(i=0;i<6;i++){
  PORTC.RC1 =~ PORTC.RC1;
- Delay_ms(500);
+ Delay_ms(300);
  }
 }

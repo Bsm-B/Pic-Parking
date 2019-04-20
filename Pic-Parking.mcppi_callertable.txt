@@ -12,6 +12,13 @@ main
 	Init_LM35
 	Init_Sensor
 	Init_Control
+	Read_Places_num
+		EEPROM_Read
+	Free_Places
+	Lcd_Cmd
+		Delay_1us
+		Delay_5500us
+		Delay_50us
 	Lcd_Out
 		Lcd_Cmd
 			Delay_1us
@@ -22,10 +29,19 @@ main
 				Delay_1us
 				Delay_5500us
 				Delay_50us
+	Motor1
+	Sub_Places
+		EEPROM_Read
+		EEPROM_Write
+	Full_Places
+	Motor2
+	Add_Places
+		EEPROM_Read
+		EEPROM_Write
 	Read_LM35
 		ADC_Read
 			Delay_22us
-		int2double
+		word2double
 			NRM3232
 				RES032
 				SETFUN32
@@ -34,12 +50,33 @@ main
 			RES032
 			SETFOV32
 			SETFUN32
-		double2int
+		Div_32x32_FP
+			SETFDZ32
+			RES032
+			SETFOV32
+			SETFUN32
+		double2byte
 			SETIOV3224
-		Div_16x16_S
-			Div_16x16_S_L
-		Mul_16X16_U
+		Mul_8X8_U
+		int2double
+			NRM3232
+				RES032
+				SETFUN32
+				FIXSIGN32
+		Sub_32x32_FP
+			Add_32x32_FP
+				NRM4032
+					RES032
+					SETFUN32
+					FIXSIGN32
+					SETFOV32
+				NRM3232
+					RES032
+					SETFUN32
+					FIXSIGN32
+				SETFOV32
 	Read_Places
 		EEPROM_Read
 		ByteToStr
 			Div_8X8_U
+interrupt

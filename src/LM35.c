@@ -6,15 +6,12 @@ void Init_LM35(){
 }
 
 void Read_LM35(char *Temp){
-  int t = 0;
-  int cent = 0;
-  int diz = 0;
-  int unit = 0;
-  t = ADC_READ(0);
-  t = t* 0.4887;
-  cent = t/100;
-  diz = (t - (cent* 100))/10;
-  unit = t - ((cent * 100 ) + (diz * 10));
+  unsigned short  cent = 0;
+  unsigned short  diz = 0;
+  unsigned short  unit = 0;
+  cent = (ADC_READ(0)* 0.4887)/100;
+  diz =  ((ADC_READ(0)* 0.4887) - (cent* 100))/10;
+  unit = (ADC_READ(0)* 0.4887) - ((cent * 100 ) + (diz * 10));
   Temp[0] = cent + '0';
   Temp[1] = diz + '0';
   Temp[2] = unit + '0';

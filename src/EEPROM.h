@@ -4,6 +4,7 @@
 
 void Write_Places(unsigned short);
 void Read_Places(char *);
+unsigned short Read_Places_num();
 void Add_Places();
 void Sub_Places();
 
