@@ -28,8 +28,13 @@ Count=0
 Count=0
 ActiveImageIndex=-1
 [OPENED_FILES]
-Count=1
+Count=6
 File0=Pic-Parking.c
+File1=src\Sensor.c
+File2=src\Sensor.h
+File3=src\LM35.h
+File4=src\LM35.c
+File5=src\LCD.c
 [EEPROM]
 Count=0
 [ACTIVE_COMMENTS_FILES]

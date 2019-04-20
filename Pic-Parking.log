@@ -1,19 +1,34 @@
-0	1	mikroCPIC1618.exe -MSF -DBG -pP16F877A -DL -O11111114 -fo16 -N"C:\Users\Bsm\Desktop\Pic-Parking\Pic-Parking.mcppi" -SP"C:\Users\Public\Documents\Mikroelektronika\mikroC PRO for PIC\Defs\" -SP"C:\Users\Public\Documents\Mikroelektronika\mikroC PRO for PIC\Uses\P16\" -SP"C:\Users\Bsm\Desktop\Pic-Parking\" -SP"C:\Users\Bsm\Desktop\Pic-Parking\src\" -IP"C:\Users\Bsm\Desktop\Pic-Parking\src\" "Pic-Parking.c" "EEPROM.c" "LCD.c" "LM35.c" "Sensor.c" "__Lib_Math.mcl" "__Lib_MathDouble.mcl" "__Lib_System.mcl" "__Lib_Delays.mcl" "__Lib_CType.mcl" "__Lib_CString.mcl" "__Lib_CStdlib.mcl" "__Lib_CMath.mcl" "__Lib_MemManager.mcl" "__Lib_Conversions.mcl" "__Lib_Sprinti.mcl" "__Lib_Sprintl.mcl" "__Lib_Time.mcl" "__Lib_Trigonometry.mcl" "__Lib_Button.mcl" "__Lib_Keypad4x4.mcl" "__Lib_Manchester.mcl" "__Lib_OneWire.mcl" "__Lib_PS2.mcl" "__Lib_Sound.mcl" "__Lib_SoftI2C.mcl" "__Lib_SoftSPI.mcl" "__Lib_SoftUART.mcl" "__Lib_ADC_A_C.mcl" "__Lib_EEPROM.mcl" "__Lib_FLASH_RW.mcl" "__Lib_I2C_c34.mcl" "__Lib_PWM_c21.mcl" "__Lib_SPI_c345.mcl" "__Lib_UART_c67.mcl" "__Lib_PortExpander.mcl" "__Lib_CANSPI.mcl" "__Lib_CF.mcl" "__Lib_GlcdFonts.mcl" "__Lib_Glcd.mcl" "__Lib_LcdConsts.mcl" "__Lib_Lcd.mcl" "__Lib_RS485.mcl" "__Lib_S1D13700.mcl" "__Lib_T6963C.mcl" "__Lib_SPIGlcd.mcl" "__Lib_SPILcd.mcl" "__Lib_SPILcd8.mcl" "__Lib_SPIT6963C.mcl" "__Lib_EthEnc28j60.mcl" "__Lib_EthEnc24j600.mcl" "__Lib_TouchPanel.mcl"	 
+0	1	mikroCPIC1618.exe -MSF -DBG -pP16F877A -RA -DL -O11111114 -fo16 -N"C:\Users\Bsm\Desktop\Pic-Parking\Pic-Parking.mcppi" -SP"C:\Users\Public\Documents\Mikroelektronika\mikroC PRO for PIC\Defs\" -SP"C:\Users\Public\Documents\Mikroelektronika\mikroC PRO for PIC\Uses\P16\" -SP"C:\Users\Bsm\Desktop\Pic-Parking\" -SP"C:\Users\Bsm\Desktop\Pic-Parking\src\" -IP"C:\Users\Bsm\Desktop\Pic-Parking\src\" "Pic-Parking.c" "EEPROM.c" "LCD.c" "LM35.c" "Sensor.c" "__Lib_Math.mcl" "__Lib_MathDouble.mcl" "__Lib_System.mcl" "__Lib_Delays.mcl" "__Lib_CType.mcl" "__Lib_CString.mcl" "__Lib_CStdlib.mcl" "__Lib_CMath.mcl" "__Lib_MemManager.mcl" "__Lib_Conversions.mcl" "__Lib_Sprinti.mcl" "__Lib_Sprintl.mcl" "__Lib_Time.mcl" "__Lib_Trigonometry.mcl" "__Lib_Button.mcl" "__Lib_Keypad4x4.mcl" "__Lib_Manchester.mcl" "__Lib_OneWire.mcl" "__Lib_PS2.mcl" "__Lib_Sound.mcl" "__Lib_SoftI2C.mcl" "__Lib_SoftSPI.mcl" "__Lib_SoftUART.mcl" "__Lib_ADC_A_C.mcl" "__Lib_EEPROM.mcl" "__Lib_FLASH_RW.mcl" "__Lib_I2C_c34.mcl" "__Lib_PWM_c21.mcl" "__Lib_SPI_c345.mcl" "__Lib_UART_c67.mcl" "__Lib_PortExpander.mcl" "__Lib_CANSPI.mcl" "__Lib_CF.mcl" "__Lib_GlcdFonts.mcl" "__Lib_Glcd.mcl" "__Lib_LcdConsts.mcl" "__Lib_Lcd.mcl" "__Lib_RS485.mcl" "__Lib_S1D13700.mcl" "__Lib_T6963C.mcl" "__Lib_SPIGlcd.mcl" "__Lib_SPILcd.mcl" "__Lib_SPILcd8.mcl" "__Lib_SPIT6963C.mcl" "__Lib_EthEnc28j60.mcl" "__Lib_EthEnc24j600.mcl" "__Lib_TouchPanel.mcl"	 
 hint: 0	1139	Available RAM: 352 [bytes], Available ROM: 8192 [bytes]	 
-diagnostics: 0	122	Compilation Started	Pic-Parking.c
-diagnostics: 9	123	Compiled Successfully	Pic-Parking.c
+diagnostics: 0	122	Compilation Started	P16F877A.c
+diagnostics: 666	123	Compiled Successfully	P16F877A.c
+diagnostics: 0	122	Compilation Started	__Lib_Delays.c
+diagnostics: 123	123	Compiled Successfully	__Lib_Delays.c
+diagnostics: 0	122	Compilation Started	__Lib_MemManager.c
+warning: 34	1508	Implicit conversion of int to ptr	__Lib_MemManager.c
+diagnostics: 231	123	Compiled Successfully	__Lib_MemManager.c
+diagnostics: 0	122	Compilation Started	__Lib_GlcdFonts.c
+diagnostics: 1207	123	Compiled Successfully	__Lib_GlcdFonts.c
+diagnostics: 0	122	Compilation Started	lcd.h
+warning: 12	1505	Suspicious pointer conversion	Pic-Parking.c
+diagnostics: 17	123	Compiled Successfully	Pic-Parking.c
 diagnostics: 0	122	Compilation Started	eeprom.h
 diagnostics: 0	123	Compiled Successfully	eeprom.h
 diagnostics: 1	122	Compilation Started	eeprom.h
-diagnostics: 1	123	Compiled Successfully	eeprom.h
-diagnostics: 1	122	Compilation Started	lcd.h
-diagnostics: 1	123	Compiled Successfully	lcd.h
-diagnostics: 1	122	Compilation Started	lm35.h
-diagnostics: 1	123	Compiled Successfully	lm35.h
-diagnostics: 0	127	All files Compiled in 516 ms	 
-hint: 0	1144	Used RAM (bytes): 2 (1%)  Free RAM (bytes): 350 (99%)	Used RAM (bytes): 2 (1%)  Free RAM (bytes): 350 (99%)
-hint: 0	1144	Used ROM (program words): 20 (1%)  Free ROM (program words): 8172 (99%)	Used ROM (program words): 20 (1%)  Free ROM (program words): 8172 (99%)
+diagnostics: 9	123	Compiled Successfully	LCD.c
+diagnostics: 0	122	Compilation Started	lm35.h
+warning: 18	1508	Implicit conversion of int to ptr	LM35.c
+warning: 19	1508	Implicit conversion of int to ptr	LM35.c
+warning: 20	1508	Implicit conversion of int to ptr	LM35.c
+diagnostics: 21	123	Compiled Successfully	LM35.c
+hint: 9	1164	Variable 't' has been eliminated by optimizer	LM35.c
+hint: 10	1164	Variable 'cent' has been eliminated by optimizer	LM35.c
+diagnostics: 0	122	Compilation Started	sensor.h
+diagnostics: 33	123	Compiled Successfully	Sensor.c
+diagnostics: 0	127	All files Compiled in 203 ms	 
+hint: 0	1144	Used RAM (bytes): 20 (6%)  Free RAM (bytes): 332 (94%)	Used RAM (bytes): 20 (6%)  Free RAM (bytes): 332 (94%)
+hint: 0	1144	Used ROM (program words): 966 (12%)  Free ROM (program words): 7226 (88%)	Used ROM (program words): 966 (12%)  Free ROM (program words): 7226 (88%)
 diagnostics: 0	125	Project Linked Successfully	Pic-Parking.mcppi
-diagnostics: 0	128	Linked in 187 ms	 
-diagnostics: 0	129	Project 'Pic-Parking.mcppi' completed: 812 ms	 
-diagnostics: 0	103	Finished successfully: 19 Apr 2019, 13:14:53	Pic-Parking.mcppi
+diagnostics: 0	128	Linked in 63 ms	 
+diagnostics: 0	129	Project 'Pic-Parking.mcppi' completed: 500 ms	 
+diagnostics: 0	103	Finished successfully: 19 Apr 2019, 17:39:45	Pic-Parking.mcppi
