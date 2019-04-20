@@ -179,6 +179,7 @@ adcs1_bit
 adcs2
 adcs2_bit
 add_32x32_fp
+add_places
 adden
 adden_bit
 adfm
@@ -425,10 +426,12 @@ font_glcd_system3x5
 font_glcd_system5x7
 font5x7
 fontsystem5x7_v2
+free_places
 freemem
 frexp
 fsr
 fsrptr
+full_places
 fullbits
 gcen
 gcen_bit
@@ -597,6 +600,8 @@ mm_nrfreeblocksused
 mm_possiblyfragmented
 mm_totalfreememsize
 modf
+motor1
+motor2
 mul_16x16_s
 mul_16x16_u
 mul_32x32_fp
@@ -689,6 +694,7 @@ pspif_bit
 pspmode
 pspmode_bit
 pspmode_trise_bit
+pt
 pwm1_init
 pwm1_set_duty
 pwm1_start
@@ -807,6 +813,7 @@ re1_bit
 re2
 re2_bit
 read_lm35
+read_places
 read_write
 read_write_bit
 res032
@@ -1139,6 +1146,7 @@ strspn
 strstr
 strtok
 sub_32x32_fp
+sub_places
 swap
 sync
 sync_bit
@@ -1364,6 +1372,7 @@ wren
 wren_bit
 wrerr
 wrerr_bit
+write_places
 xtoi
 z
 z_bit

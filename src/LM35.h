@@ -4,7 +4,7 @@
 
 void Init_LM35();
 
-void Read_LM35(char **);
+void Read_LM35(char *);
 
 
 #endif

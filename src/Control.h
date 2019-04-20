@@ -3,9 +3,9 @@
 
 
 void Init_Control();
-
-
-
-
+void Motor1();
+void Motor2();
+void Free_Places();
+void Full_Places();
 
 #endif

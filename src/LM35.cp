@@ -6,14 +6,14 @@
 
 void Init_LM35();
 
-void Read_LM35(char **);
+void Read_LM35(char *);
 #line 3 "C:/Users/Bsm/Desktop/Pic-Parking/src/LM35.c"
 void Init_LM35(){
  TRISA = 0xFF;
  ADCON1 = 0x0E;
 }
 
-void Read_LM35(char ** Temp){
+void Read_LM35(char *Temp){
  int t = 0;
  int cent = 0;
  int diz = 0;

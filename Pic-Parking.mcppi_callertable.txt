@@ -11,6 +11,7 @@ main
 			Delay_50us
 	Init_LM35
 	Init_Sensor
+	Init_Control
 	Read_LM35
 		ADC_Read
 			Delay_22us
@@ -38,3 +39,7 @@ main
 				Delay_1us
 				Delay_5500us
 				Delay_50us
+	Read_Places
+		EEPROM_Read
+		ByteToStr
+			Div_8X8_U

@@ -5,7 +5,7 @@ void Init_LM35(){
   ADCON1 = 0x0E;   //ONLY A0;
 }
 
-void Read_LM35(char ** Temp){
+void Read_LM35(char *Temp){
   int t = 0;
   int cent = 0;
   int diz = 0;

@@ -15,7 +15,7 @@ L_end_Init_LM35:
 
 _Read_LM35:
 
-;LM35.c,8 :: 		void Read_LM35(char ** Temp){
+;LM35.c,8 :: 		void Read_LM35(char *Temp){
 ;LM35.c,9 :: 		int t = 0;
 ;LM35.c,10 :: 		int cent = 0;
 ;LM35.c,11 :: 		int diz = 0;
@@ -110,10 +110,6 @@ _Read_LM35:
 	MOVLW      48
 	ADDWF      FLOC__Read_LM35+2, 0
 	MOVWF      R0+0
-	MOVF       FLOC__Read_LM35+3, 0
-	BTFSC      STATUS+0, 0
-	ADDLW      1
-	MOVWF      R0+1
 	MOVF       FARG_Read_LM35_Temp+0, 0
 	MOVWF      FSR
 	MOVF       R0+0, 0
@@ -124,10 +120,6 @@ _Read_LM35:
 	MOVLW      48
 	ADDWF      Read_LM35_diz_L0+0, 0
 	MOVWF      R0+0
-	MOVF       Read_LM35_diz_L0+1, 0
-	BTFSC      STATUS+0, 0
-	ADDLW      1
-	MOVWF      R0+1
 	MOVF       R0+0, 0
 	MOVWF      INDF+0
 ;LM35.c,20 :: 		Temp[2] = unit + '0';
@@ -137,10 +129,6 @@ _Read_LM35:
 	MOVLW      48
 	ADDWF      Read_LM35_unit_L0+0, 0
 	MOVWF      R0+0
-	MOVF       Read_LM35_unit_L0+1, 0
-	BTFSC      STATUS+0, 0
-	ADDLW      1
-	MOVWF      R0+1
 	MOVF       R0+0, 0
 	MOVWF      INDF+0
 ;LM35.c,21 :: 		}
