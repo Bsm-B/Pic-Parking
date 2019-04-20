@@ -1,7 +1,6 @@
 #include "Sensor.h"
 
 
-
 void interruption(){
 
      if (INTCON.RBIF){

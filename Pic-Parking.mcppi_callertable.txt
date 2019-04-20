@@ -10,6 +10,7 @@ main
 			Delay_5500us
 			Delay_50us
 	Init_LM35
+	Init_Sensor
 	Read_LM35
 		ADC_Read
 			Delay_22us

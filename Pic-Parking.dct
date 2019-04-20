@@ -496,6 +496,7 @@ ibov_trise_bit
 ics_auto
 ics_off
 indf
+init_control
 init_lcd
 init_lm35
 init_sensor

@@ -7,7 +7,7 @@ void Init_Sensor();
 void interruption();
 void Open_Bar();
 void Close_Bar();
-#line 5 "C:/Users/Bsm/Desktop/Pic-Parking/src/Sensor.c"
+#line 4 "C:/Users/Bsm/Desktop/Pic-Parking/src/Sensor.c"
 void interruption(){
 
  if (INTCON.RBIF){

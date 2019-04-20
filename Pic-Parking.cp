@@ -44,10 +44,9 @@ char Temp[] = "000";
 void main() {
  Init_LCD();
  Init_LM35();
+ Init_Sensor();
  do{
  Read_LM35( Temp);
  LCD_Out(1,1,Temp);
  }while(1);
-
-
 }
